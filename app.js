@@ -32,14 +32,14 @@ app.use(express.urlencoded({extended:true}))
 //   })
 // );
 
-app.get('/api/', (req,res, next)=>{
+app.get('/', (req,res, next)=>{
   console.log('I am api shsdvb')
   console.log("I am second", process.env.DB_NAME)
   console.log("I am third")
     res.send('<h1>Hello Word New</h1>')
 })
 
-app.get('/api/user', (req,res, next)=>{
+app.get('/user', (req,res, next)=>{
   console.log('I am api shsdvb')
   console.log("I am second", process.env.DB_NAME)
   console.log("I am third")
@@ -47,7 +47,7 @@ app.get('/api/user', (req,res, next)=>{
 })
 
 
-app.get('/api/user/name', (req,res, next)=>{
+app.get('/user/name', (req,res, next)=>{
   console.log('I am api shsdvb')
   console.log("I am second", process.env.DB_NAME)
   console.log("I am third")
