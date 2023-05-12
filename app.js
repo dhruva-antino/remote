@@ -32,7 +32,7 @@ app.use(express.urlencoded({extended:true}))
 //   })
 // );
 
-app.get('/', (req,res, next)=>{
+app.get('/api/', (req,res, next)=>{
   console.log('I am api shsdvb')
   console.log("I am second", process.env.DB_NAME)
   console.log("I am third")
