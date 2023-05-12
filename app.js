@@ -39,6 +39,13 @@ app.get('/api/', (req,res, next)=>{
     res.send('<h1>Hello Word New</h1>')
 })
 
+app.get('/api/user', (req,res, next)=>{
+  console.log('I am api shsdvb')
+  console.log("I am second", process.env.DB_NAME)
+  console.log("I am third")
+    res.send({name:"dhruva"})
+})
+
 app.listen(3000, ()=>{
     console.log('server is running on port 3000')
 });
